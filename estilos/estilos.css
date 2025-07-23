@@ -1,0 +1,25 @@
+
+.boton {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: 2px solid gold;
+  transition: background-color 0.3s, border-color 0.3s;
+  border-radius: 15px ;
+}
+
+.boton:hover {
+  background-color: #45a049;
+  border-color: #f0ad4e;
+}
+
+.boton:disabled {
+  background-color: #ccc;
+  border-color: #999;
+  cursor: not-allowed;
+}
+
