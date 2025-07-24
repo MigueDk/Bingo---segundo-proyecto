@@ -1,27 +1,29 @@
 
 .boton {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: 2px solid gold;
-  transition: background-color 0.3s, border-color 0.3s;
-  border-radius: 15px ;
+    padding: 15px 30px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    background-color: #4CAF50;
+    border: 2px solid gold;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .boton:hover {
-  background-color: #45a049;
-  border-color: #f0ad4e;
+    background-color: #45a049;
+    border-color: #f04a4e;
+    transform: scale(1.05); /* Agranda el botón un poco */
 }
 
 .boton:disabled {
-  background-color: #ccc;
-  border-color: #999;
-  cursor: not-allowed;
+    background-color: #ccc;
+    border-color: #999;
+    cursor: not-allowed;
 }
+
 
 .cantor{
   flex: 0 0 300px; /* No crece, no se encoge, tiene un ancho base de 300px */
@@ -30,4 +32,38 @@
   box-sizing: border-box; /* Incluye padding y borde en el ancho */
   padding-right: 10px; /* Pequeño padding para separar del borde del contenedor */
 }
+.tablaCantor{
+    width: 100%; /* Ocupa todo el ancho disponible en .cantor-section */
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+.tablaCantor th,
+.tablaCantor td {
+  border: 1px solid ghostwhite;
+  padding: 8px; 
+  text-align: center;
+  font-weight: bold;
+  font-size: 1em;
+  width: calc(100% / 5); /* para que lñas columnas tengan el mismo ancho */
+}
+.tablaCantor th {
+  background-color: #0056b3;
+  color: white;
+}
+
+.balotaSacada td.sacada {
+  background-color: #07f53a;
+  color: rgb(189, 12, 12);
+}
+
+.tablaCantor td:not(.sacada) {
+  background-color: #2a9b0e;
+  color: rgb(126, 112, 112);
+
+}
+
+ .UltimaBalota{
+
+ }
 
